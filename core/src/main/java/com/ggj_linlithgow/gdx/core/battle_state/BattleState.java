@@ -25,7 +25,7 @@ public class BattleState implements Screen{
         renderer().begin(ShapeType.Filled);
         
         renderer().setColor(Color.WHITE);
-        renderer().rect(50, 50, 50, 50);
+        renderer().rect(0, display.getStage().getViewport().getWorldHeight()/2, display.getStage().getViewport().getWorldWidth(), 1);
         
         renderer().end();
         Gdx.gl.glDisable(GL30.GL_BLEND);
