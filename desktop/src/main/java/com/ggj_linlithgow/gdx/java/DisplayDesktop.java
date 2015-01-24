@@ -8,8 +8,12 @@ import com.ggj_linlithgow.gdx.core.Display;
 public class DisplayDesktop {
 	public static void main (String[] args) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width = 800;
-		config.height = 600;
+		config.width = 1600;
+		config.height = 900;
+		config.fullscreen = true;
+//		config.width = 1440;
+//		config.height = 800;
+//		config.fullscreen = false;
 		new LwjglApplication(new Display(), config);
 	}
 }

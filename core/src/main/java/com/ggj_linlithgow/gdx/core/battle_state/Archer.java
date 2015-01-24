@@ -7,7 +7,5 @@ public class Archer extends Actor{
 	@Override
 	public void act(float delta) {
 		super.act(delta);
-		
-		System.err.println("archer");
 	}
 }
