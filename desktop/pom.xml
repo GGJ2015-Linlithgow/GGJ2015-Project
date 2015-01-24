@@ -13,7 +13,7 @@
 	<name>Display desktop</name>
 
 	<properties>
-		<mainClass>com.ggj-linlithgow.gdx.java.DisplayDesktop</mainClass>
+		<mainClass>com.ggj_linlithgow.gdx.java.DisplayDesktop</mainClass>
 	</properties>
 
 	<dependencies>
