@@ -8,7 +8,10 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.ggj_linlithgow.gdx.core.battle_state.BattleState;
+import com.ggj_linlithgow.gdx.core.map_state.MapState;
 
 public class Display extends Game {
 
@@ -20,9 +23,12 @@ public class Display extends Game {
 		
 		renderer = new ShapeRenderer();
 		stage = new Stage(new FitViewport(800, 600));
+//		stage = new Stage(new ExtendViewport(1600, 900));
+		//stage = new Stage(new ExtendViewport(1440, 800));
 		
-		BattleState battleState = new BattleState(this);
-		setScreen(battleState);
+		final BattleState battleState = new BattleState(this);
+		final MapState mapState = new MapState(this);
+		setScreen(mapState);
 	}
 	
 	@Override
